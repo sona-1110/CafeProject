@@ -1,1 +1,35 @@
 <p>feedback works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3">
+          <h3 class="page-header">
+             <b>Our Specialities</b>
+            
+          </h3>
+          <ul class="list-group">
+            <li class="list-group-item">Expresso & Classic</li>
+            <li class="list-group-item">Cappuccino</li>
+            <li class="list-group-item">Cold Brew</li>
+            <li class="list-group-item">Caffe Latte</li>
+            <li class="list-group-item">Flat White</li>
+            <li class="list-group-item">Americano</li>
+            <li class="list-group-item">Hot Chocolate</li>
+            <li class="list-group-item">Cad-M & Cad-B</li>
+          </ul>
+       </div>
+        <div class="col-sm-9">
+            <h1 class="text-center">Valuable Feedback</h1>
+          <form (ngSubmit)="submitdata()">
+             
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea type="text" class="form-control" id="message" name="message" [(ngModel)]="fd.message" placeholder="Enter a Message"></textarea>
+      </div>
+      
+      <button type="submit"  class="btn btn-primary">Submit</button>
+    </form>
+ </div>
+</div>
+</div>
+  
+  

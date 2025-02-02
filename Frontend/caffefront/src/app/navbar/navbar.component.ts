@@ -22,17 +22,25 @@ if(val.url)
   let ut=localStorage.getItem("usertype")
   if(ut=="user")
     this.menutype="user"
+  else if(ut=="admin")
+    this.menutype="admin"
   else
-  this.menutype="guest"
+    this.menutype="guest"
 
 }
 })
 }
+
 logout()
 {
+  
   localStorage.removeItem("emailid")
   localStorage.setItem("usertype","guest")
   this.router.navigate(["/"])
 }
-
+alogout()
+{
+  localStorage.setItem("usertype","guest")
+  this.router.navigate(["/"])
+}
 }

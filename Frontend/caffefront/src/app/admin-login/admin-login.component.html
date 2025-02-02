@@ -1,14 +1,14 @@
 
 <div class="col-sm-9">
     <h2>Admin Login Here </h2>
-    <form>
+    <form (ngSubmit)="submitdata()">
         <div class="form-group">
         <label for="emailid">Email address:</label>
-          <input type="email" class="form-control" id="emailid" name="emailid">
+          <input type="email" class="form-control" id="emailid" name="emailid" [(ngModel)]="adm.emailid">
         </div>
         <div class="form-group">
           <label for="pwd">Password:</label>
-          <input type="password" class="form-control" id="password" name="password">
+          <input type="password" class="form-control" id="password" name="password"[(ngModel)]="adm.password">
         </div>
         
         <button type="submit"  class="btn btn-primary">Submit</button>
